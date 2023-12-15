@@ -629,7 +629,7 @@ ScrollTrigger.create({
 }
 canvas2()
 
-
+//PAGE 7 EFFECT
 gsap.to('#page7-cir',{
   scrollTrigger:{
     trigger:`#page7-cir`,
@@ -650,3 +650,5 @@ gsap.to('.page7-cir-inner',{
   },
   backgroundColor:"#2d50da8c"
 })
+
+// PAGE 8 EFFECT
