@@ -43,7 +43,7 @@ html,body{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 1vw;
 }
 #right-nav>button:first-child{
     padding: 10px 20px;
@@ -56,7 +56,7 @@ html,body{
 
 #right-nav>button:last-child{
     font-size: 16px;
-    padding: 4px 10px;
+    padding: 3px 15px;
     border-radius: 50px;
     border: 1px solid white;
     background-color: #0b4bed;
@@ -331,9 +331,10 @@ html,body{
     color: #ffffffb4;
 }
 #page10{
-    height: 120vh;
     width: 100vw;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 #page10
 >h1{
@@ -406,4 +407,146 @@ html,body{
 .page10-inner .blog-details>h1{
     font-size: 20px;
     margin-top: 1rem;
+}
+
+#page10 .btn{
+    width: max-content;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: white;
+    border-radius: 20px;
+    color: blue;
+    padding: 10px 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#page11{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1137ca;
+}
+.page11-inner{
+    position: absolute;
+    top: 30%;
+    right: 18%;
+    width: 32%;
+    color: white;
+}
+.page11-inner>h1{
+    font-size: 5.1vw;
+    font-weight: 100;
+}
+.page11-inner>p{
+    font-size: 1.2vw;
+    margin-top: 20px;
+    line-height: 1.9;
+    color: #ffffffd3;
+}
+
+#page12 {
+    position: relative;
+    width: 100vw;
+    height: 80vh;
+    background-color: #000000;
+}
+
+.page12-inner {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    width: 40%;
+    color: white;
+}
+
+.page12-inner > h1 {
+    font-size: 5.8vw;
+    font-weight: 100;
+}
+
+.page12-inner button {
+    position: relative;
+    margin-top: 4vw;
+    margin-left: 20px;
+    width: max-content;
+    padding: 15px 35px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background-color: #1137ca;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.page12-inner button .btn-inner{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 100%);
+    background-color: white;
+    transition: all ease 0.3s;    
+}
+.page12-inner button:hover .btn-inner{
+    transform: translate(0%, 0%);
+    z-index: 9;
+}
+
+.page12-inner button:hover span{
+    z-index: 99999;
+    position: relative;
+    color:#0b3bb6;
+}
+
+
+#page13{
+    height: 60vh;
+    width: 100vw;
+    background-color: #000;
+}
+
+.page13-inner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 33.3%;
+    padding: 0vw 5vw;
+    width: 100%;
+    border-top: 0.2px solid #ffffff2d;
+    border-top: 0.2px solid #ffffff21;
+}
+.page13-inner>h1{
+    position: relative;
+    color: white;
+    left: 5%;
+    font-weight: 100;
+    font-size: 2.6vw;
+    z-index: 999;
+}
+.page13-inner>i{
+    position: relative;
+    color: white;
+    font-size: 2vw;
+    transform: rotate(45deg);
+    z-index: 999;
+}
+
+.page13-inner .center{
+    position: absolute;
+    background-color:#0b3bb6;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 0%;
+    transition: all ease .5s;
+}
+
+.page13-inner:hover .center{
+    height: 100%;
 }

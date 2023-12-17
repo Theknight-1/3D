@@ -652,3 +652,7 @@ gsap.to('.page7-cir-inner',{
 })
 
 // PAGE 8 EFFECT
+
+function handleBookDemo() {
+  console.log("button clicked");
+}
